@@ -21,3 +21,4 @@ $(document).ready(function() {
     var thisArticle = $(this).closest('.mdl-card').data("article");
     $(thisArticle).fadeIn();
   });
+});
