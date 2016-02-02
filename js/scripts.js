@@ -21,10 +21,14 @@ function Admin(userName, password){
 }
 
 
-$(document).ready(function() {
+$(function() {
   $(".mdl-button").click(function() {
-    $('.mdl-cell').fadeOut();
+    $('.mdl-grid').fadeToggle();
     var thisArticle = $(this).closest('.mdl-card').data("article");
-    $(thisArticle).fadeIn();
+    $(thisArticle).fadeToggle();
+  });
+  $(".backButton").click(function() {
+    $(this).closest('div').hide();
+    $('.mdl-grid').show();
   });
 });
