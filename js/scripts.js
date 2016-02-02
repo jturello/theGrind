@@ -12,3 +12,12 @@ function Admin(userName, password){
   this.userName = userName;
   this.password = password;
 }
+
+
+$(document).ready(function() {
+  //click a cell to only show article
+  $(".mdl-button").click(function() {
+    $('.mdl-cell').fadeOut();
+    var thisArticle = $(this).closest('.mdl-card').data("article");
+    $(thisArticle).fadeIn();
+  });
