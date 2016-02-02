@@ -31,4 +31,14 @@ $(function() {
     $(this).closest('div').hide();
     $('.mdl-grid').show();
   });
+
+  $("#drawerTitle").click(function() {
+    $(".backButton").closest('div').hide();
+    $('.mdl-grid').show();
+  });
+
+  $(".mdl-logo").click(function() {
+    $(".backButton").closest('div').hide();
+    $('.mdl-grid').show();
+  });
 });
