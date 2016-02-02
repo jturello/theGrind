@@ -5,3 +5,10 @@ function Post(title, subtext, img_url, type, post_body) {
   this.type = type;
   this.post_body = post_body;
 }
+
+
+
+function Admin(userName, password){
+  this.userName = userName;
+  this.password = password;
+}
