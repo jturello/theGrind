@@ -23,8 +23,12 @@ function Admin(userName, password){
 
 $(document).ready(function() {
   $(".mdl-button").click(function() {
-    $('.mdl-cell').fadeOut();
+    $('.mdl-grid').fadeToggle();
     var thisArticle = $(this).closest('.mdl-card').data("article");
-    $(thisArticle).fadeIn();
+    $(thisArticle).fadeToggle();
+  });
+  $(".backButton").click(function() {
+    $('#articleSpace').fadeToggle();
+    $('.mdl-grid').fadeToggle();
   });
 });
