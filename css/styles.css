@@ -37,3 +37,15 @@
 .init_hidden {
   display: none;
 }
+
+#mainArticle {
+  max-width: 2000px;
+  padding-bottom: 12px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px
+}
+
+.mdl-mini-footer {
+  padding-top: 15px;
+}
