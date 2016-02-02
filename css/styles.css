@@ -7,6 +7,12 @@
   color: rgba(255,193,7,1);
 }
 
+.mdl-color-text--light {
+  color: rgba(255,255,255,1);
+}
+
+
+
 .mdl-layout__header-row .mdl-navigation__link {
   color: rgb(66, 66, 66);
 }
@@ -17,4 +23,17 @@
 
 .mdl-color-background--primary {
   background-color: rgba(237,234,225,1);
+}
+
+.mdl-grid {
+  max-width: 1024px;
+}
+
+.mdl-card__actions a {
+  color: rgba(255,255,255,1);
+}
+
+
+.init_hidden {
+  display: hidden;
 }
