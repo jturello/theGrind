@@ -1,0 +1,20 @@
+#drawerTitle,
+.mdl-mini-footer {
+  background-color: rgba(84,80,74,1);
+}
+
+.mdl-color-text--accent {
+  color: rgba(255,193,7,1);
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+  color: rgb(66, 66, 66);
+}
+
+.mdl-color-background--accent {
+  background-color: rgba(255,193,7,1);
+}
+
+.mdl-color-background--primary {
+  background-color: rgba(237,234,225,1);
+}
