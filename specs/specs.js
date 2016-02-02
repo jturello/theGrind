@@ -27,6 +27,39 @@ describe('Post', function() {
 });
 
 
+describe('editPost', function() {
+  it("allows an admin to update a post's title", function() {
+    var post = new Post('test title', 'test subtext', './images/image1.jpg', 'test type', 'test post body');
+    post.editPost('new title', 'new subtext', './images/new_image1.jpg', 'new type', ' new post body');
+    expect(post.title).to.equal('new title');
+  });
+
+  it("allows an admin to update a post's subtext", function() {
+    var post = new Post('test title', 'test subtext', './images/image1.jpg', 'test type', 'test post body');
+    post.editPost('new title', 'new subtext', './images/new_image1.jpg', 'new type', ' new post body');
+    expect(post.subtext).to.equal('new subtext');
+  });
+
+  it("allows an admin to update a post's img_url", function() {
+    var post = new Post('test title', 'test subtext', './images/image1.jpg', 'test type', 'test post body');
+    post.editPost('new title', 'new subtext', './images/new_image1.jpg', 'new type', ' new post body');
+    expect(post.img_url).to.equal('./images/new_image1.jpg');
+  });
+
+  it("allows an admin to update a post's type", function() {
+    var post = new Post('test title', 'test subtext', './images/image1.jpg', 'test type', 'test post body');
+    post.editPost('new title', 'new subtext', './images/new_image1.jpg', 'new type', ' new post body');
+    expect(post.type).to.equal('new type');
+  });
+
+  it("allows an admin to update a post's body", function() {
+    var post = new Post('test title', 'test subtext', './images/image1.jpg', 'test type', 'test post body');
+    post.editPost('new title', 'new subtext', './images/new_image1.jpg', 'new type', 'new post body');
+    expect(post.post_body).to.equal('new post body');
+  });
+
+});
+
 
 describe('Admin', function() {
   it("has a user name", function() {
