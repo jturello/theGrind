@@ -49,3 +49,8 @@
 .mdl-mini-footer {
   padding-top: 15px;
 }
+
+.mdl-card__media {
+    margin: 0;
+    max-width: 100%;
+}
