@@ -11,8 +11,6 @@
   color: rgba(255,255,255,1);
 }
 
-
-
 .mdl-layout__header-row .mdl-navigation__link {
   color: rgb(66, 66, 66);
 }
@@ -53,4 +51,15 @@
 .mdl-card__media {
     margin: 0;
     max-width: 100%;
+}
+
+#adminLoginLink {
+  position: absolute;
+  bottom: 0px;
+  margin: 0px;
+  color: rgba(237,234,225,1);
+}
+
+#adminLoginLink:hover {
+  color: rgba(255,193,7,1);
 }
