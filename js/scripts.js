@@ -50,9 +50,16 @@ $(function() {
   });
 
   $("#enterButton").click(function(){
-    $('#adminCPLogin').fadeOut();
-    $('#adminCP').delay(400).fadeIn();
-  })
+    var username = ($('input#user').val());
+    var password = ($('input#password').val());
+    if (username === "admin" && password === "password"){
+      $('#adminCPLogin').fadeOut();
+      $('#adminCP').delay(400).fadeIn();
+  }
+    // else {
+    //   alert("wrongusernameorpassword");
+    // }
+  });
 
   $("#cancelPost").click(function(){
     $('#adminCP').fadeOut();
