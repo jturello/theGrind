@@ -20,12 +20,12 @@ function Card(title, subtitle, subject) {
 
 
 $(function() {
-  $('#articleSpace').on('click', '.toMainFeed', function() {
+  $('body').on('click', '.toMainFeed', function() {
     $('.hideable').hide();
     $('.mdl-grid').show();
   });
 
-  $("#mainFeed").on('click', '.cta', function() {
+  $("body").on('click', '.cta', function() {
     var thisArticle = $(this).closest('.mdl-card').data("article");
     console.log(thisArticle);
     console.log($(this));
