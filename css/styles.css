@@ -106,6 +106,10 @@
   background: rgba(0,0,0,0.3);
 }
 
+#mainFeed .mdl-cell--12-col .mdl-card {
+  width: 100%;
+}
+
 /* Featured Article */
 #mainFeed .mdl-cell--8-col .mdl-card {
   width: 666px;
