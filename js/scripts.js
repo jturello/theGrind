@@ -22,23 +22,21 @@ function Admin(userName, password){
 
 
 $(function() {
-  $(".mdl-button").click(function() {
-    $('.mdl-grid').fadeToggle();
+  $(".toMainFeed").click(function() {
+    $('.hideable').hide();
+    $('.mdl-grid').show();
+  });
+
+  $(".cta").click(function() {
     var thisArticle = $(this).closest('.mdl-card').data("article");
-    $(thisArticle).fadeToggle();
-  });
-  $(".backButton").click(function() {
-    $("hideable").hide();
-    $('.mdl-grid').show();
+    $('.hideable').hide();
+    $(thisArticle).show();
   });
 
-  $("#drawerTitle").click(function() {
-    $(".backButton").closest('div').hide();
-    $('.mdl-grid').show();
+  $(".mdl-navigation__link").click(function(){
+    var thisPage = $(this).data("page");
+    $('.hideable').hide();
+    $(thisPage).show();
   });
 
-  $(".mdl-logo").click(function() {
-    $(".backButton").closest('div').hide();
-    $('.mdl-grid').show();
-  });
 });
