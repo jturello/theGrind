@@ -28,7 +28,7 @@ $(function() {
     $(thisArticle).fadeToggle();
   });
   $(".backButton").click(function() {
-    $(this).closest('div').hide();
+    $("hideable").hide();
     $('.mdl-grid').show();
   });
 
