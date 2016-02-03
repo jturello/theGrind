@@ -48,4 +48,14 @@ $(function() {
     $('#adminCPLogin').fadeOut();
     $('.mdl-layout').first().slideDown();
   });
+
+  $("#enterButton").click(function(){
+    $('#adminCPLogin').fadeOut();
+    $('#adminCP').delay(400).fadeIn();
+  })
+
+  $("#cancelPost").click(function(){
+    $('#adminCP').fadeOut();
+    $('.mdl-layout').first().slideDown();
+  });
 });
