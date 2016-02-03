@@ -15,12 +15,6 @@ Post.prototype.editPost = function(newTitle, newSubtext, new_img_url, newType, n
 }
 
 
-function Admin(userName, password){
-  this.userName = userName;
-  this.password = password;
-}
-
-
 $(function() {
   $(".toMainFeed").click(function() {
     $('.hideable').hide();
