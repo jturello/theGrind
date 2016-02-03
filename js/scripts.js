@@ -1,6 +1,6 @@
-function Article(title, subtext, subject, body) {
+function Article(title, subtitle, subject, body) {
   this.title = title;
-  this.subtext = subtext;
+  this.subtitle = subtitle;
   this.subject = subject;
   this.body = body;
 }
@@ -9,12 +9,6 @@ function Article(title, subtext, subject, body) {
 //
 // Article.prototype.createCard
 
-Article.prototype.update = function(newTitle, newSubtext, newSubject, new_body) {
-  this.title = newTitle;
-  this.subtext = newSubtext;
-  this.subject = newSubject;
-  this.body = new_body;
-}
 
 $(function() {
   $(".toMainFeed").click(function() {
