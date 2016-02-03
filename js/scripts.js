@@ -5,9 +5,9 @@ function Article(title, subtitle, subject, body) {
   this.body = body;
 }
 
-// Article.prototype.post
+//Article.prototype.post
 //
-// Article.prototype.createCard
+//Article.prototype.createCard
 
 
 $(function() {
@@ -54,4 +54,16 @@ $(function() {
     $('#adminCP').fadeOut();
     $('.mdl-layout').first().slideDown();
   });
+
+  $('postID').click(function(){
+  var title = $('input#articleTitle').val();
+  var subtitle = $('input#articleSubtitle').val();
+  var subject = $('input#articleSubject').val();
+  var body = $('input#articleBody').val();
+
+  var newArticle = new Article(title, headline, subject, body);
+  newArticle.createArticle();
+  newArticle.createCard();
+})
+
 });
