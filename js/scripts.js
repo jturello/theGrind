@@ -39,4 +39,13 @@ $(function() {
     $(thisPage).show();
   });
 
+  $("#adminLoginLink").click(function(){
+    $('.mdl-layout').first().fadeOut();
+    $('#adminCPLogin').delay(400).fadeIn();
+  });
+
+  $("#cancelButton").click(function(){
+    $('#adminCPLogin').fadeOut();
+    $('.mdl-layout').first().slideDown();
+  });
 });
