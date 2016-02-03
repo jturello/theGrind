@@ -21,10 +21,22 @@ function Admin(userName, password){
 }
 
 
-$(document).ready(function() {
-  $(".mdl-button").click(function() {
-    $('.mdl-cell').fadeOut();
-    var thisArticle = $(this).closest('.mdl-card').data("article");
-    $(thisArticle).fadeIn();
+$(function() {
+  $(".toMainFeed").click(function() {
+    $('.hideable').hide();
+    $('.mdl-grid').show();
   });
+
+  $(".cta").click(function() {
+    var thisArticle = $(this).closest('.mdl-card').data("article");
+    $('.hideable').hide();
+    $(thisArticle).show();
+  });
+
+  $(".mdl-navigation__link").click(function(){
+    var thisPage = $(this).data("page");
+    $('.hideable').hide();
+    $(thisPage).show();
+  });
+
 });
