@@ -50,15 +50,10 @@ $(function() {
   });
 
   $("#enterButton").click(function(){
-    var username = ($('input#user').val());
-    var password = ($('input#password').val());
-    if (username === "admin" && password === "password"){
+    if (($('input#user').val()) === "admin" && ($('input#password').val()) === "password"){
       $('#adminCPLogin').fadeOut();
       $('#adminCP').delay(400).fadeIn();
-  }
-    // else {
-    //   alert("wrongusernameorpassword");
-    // }
+    }
   });
 
   $("#cancelPost").click(function(){
