@@ -36,14 +36,6 @@
   display: none;
 }
 
-#mainArticle {
-  max-width: 2000px;
-  padding-bottom: 12px;
-  padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px
-}
-
 .mdl-mini-footer {
   padding-top: 15px;
 }
@@ -52,7 +44,74 @@
     margin: 0;
     max-width: 100%;
 }
+/* Main Article*/
 
+#mainArticle {
+  max-width: 2000px;
+}
+
+#mainArticle .mdl-card {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background: url('../img/Portland_Weird.jpg') center / cover;
+  color: rgba(0,0,0,0.7);
+}
+
+#mainArticleContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.3);
+}
+
+#mainArticle .mdl-card__title {
+  color: rgb(255, 255, 255);
+}
+
+#mainArticle .mdl-card__supporting-text {
+  color: rgb(255, 255, 255);
+}
+
+/* Main Feed Articles */
+#mainFeed .mdl-card {
+  height: 228px;
+}
+
+#mainFeed .mdl-card__title {
+  height: 176px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+#mainFeed .mdl-card__title h3 {
+  color: rgb(255,255,255);
+  position: absolute;
+  top: 110px;
+  left: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+#mainFeed .mdl-card__title p {
+  color: rgb(255,255,255);
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+#mainFeed .mdl-card__actions {
+  background: rgba(0,0,0,0.3);
+}
+
+/* Featured Article */
+#mainFeed .mdl-cell--8-col .mdl-card {
+  width: 666px;
+}
+
+/* Admin Control Panel*/
 #adminLoginLink {
   position: absolute;
   bottom: 0px;
