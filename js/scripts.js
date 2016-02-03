@@ -20,7 +20,7 @@ function Card(title, subtitle, subject) {
 
 
 $(function() {
-  $(".toMainFeed").click(function() {
+  $('#articleSpace').on('click', '.toMainFeed', function() {
     $('.hideable').hide();
     $('.mdl-grid').show();
   });
@@ -56,9 +56,7 @@ $(function() {
       $('#adminCPLogin').fadeOut();
       $('#adminCP').delay(400).fadeIn();
   }
-    // else {
-    //   alert("wrongusernameorpassword");
-    // }
+
   });
 
   $("#cancelPost").click(function(){
@@ -93,8 +91,10 @@ $(function() {
                               "</div>");
                               componentHandler.upgradeDom();
 
-});
+                              //return to main feed
+                              $('#adminCP').fadeOut();
+                              $('.mdl-layout').first().slideDown();
 
-
+      });
 
 });
