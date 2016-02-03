@@ -80,7 +80,7 @@ $(function() {
                               "</div>");
 
 
-      $('#mainFeed').append("<div class='mdl-cell mdl-cell--12-col'>" +
+      $('#mainFeed').prepend("<div class='mdl-cell mdl-cell--12-col'>" +
                               "<div class='mdl-card mdl-shadow--2dp' data-article='#" + newArticle.subject + "'>" +
                                 "<div class='mdl-card__title'>" +
                                   "<h3>" + newArticle.title + "</h3>" +
