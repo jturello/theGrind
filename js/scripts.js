@@ -1,15 +1,19 @@
-function Article(title, subtext, subject, post_body) {
+function Article(title, subtext, subject, body) {
   this.title = title;
   this.subtext = subtext;
   this.subject = subject;
-  this.post_body = post_body;
+  this.body = body;
 }
 
-Article.prototype.update = function(newTitle, newSubtext, newSubject, new_post_body) {
+// Article.prototype.post
+//
+// Article.prototype.createCard
+
+Article.prototype.update = function(newTitle, newSubtext, newSubject, new_body) {
   this.title = newTitle;
   this.subtext = newSubtext;
   this.subject = newSubject;
-  this.post_body = new_post_body;
+  this.body = new_body;
 }
 
 $(function() {
