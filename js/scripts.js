@@ -27,8 +27,6 @@ $(function() {
 
   $("body").on('click', '.cta', function() {
     var thisArticle = $(this).closest('.mdl-card').data("article");
-    // console.log(thisArticle);
-    // console.log($(this));
     $('.hideable').hide();
     $(thisArticle).show();
   });
@@ -64,7 +62,8 @@ $(function() {
     $('.mdl-layout').first().slideDown();
   });
 
-  $('#postButton').click(function(){
+ // $('#postButton').click(function(){
+  $('#postButton').on('click', function(){
     var title = $('input#articleTitle').val();
     var subtitle = $('input#articleSubtitle').val();
     var subject = $('input#articleSubject').val();
@@ -91,8 +90,7 @@ $(function() {
                                      "</div>" +
                                    "</div>" +
                                  "</div>" +
-                               "</div>"
-);
+                               "</div>");
 
 
       $('#mainFeed').prepend("<div class='mdl-cell mdl-cell--12-col'>" +
@@ -111,8 +109,7 @@ $(function() {
                               //return to main feed
                               $('#adminCP').fadeOut();
                               $('.mdl-layout').first().slideDown();
-
-      });
+});
 
       $('#newsLetter').click(function(){
     showDialog({
