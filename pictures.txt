@@ -1,0 +1,1 @@
+['400_img.jpg','BS2_img.jpg','BS_pic.jpg','Portland_Weird.jpg','Powels_img.jpg','about.jpg','bar.jpg','bus.jpg','code_img.jpg','contact.jpg','mural_img.jpg','oregon.jpg','rain.jpg','street_img.jpg','student_img.jpg']
