@@ -75,7 +75,7 @@ $(function() {
      $('#articleSpace').append("<div id='" + newArticle.subject + "' class='init_hidden hideable'>" +
                                  "<div class='mdl-grid'>" +
                                    "<div class='mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col'>" +
-                                     "<div class='mdl-card__media' style='background: url('img/Portland_Weird.jpg') center / cover; height: 400px;'>" +
+                                     "<div class='mdl-card__media' style='background: url('#') center / cover; height: 400px;'>" +
                                      "</div>" +
                                      "<div class='mdl-card__title'>" +
                                        "<h3 class='mdl-card__title-text'>" + newArticle.title + "</h3>" +
