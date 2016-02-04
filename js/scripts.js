@@ -27,8 +27,8 @@ $(function() {
 
   $("body").on('click', '.cta', function() {
     var thisArticle = $(this).closest('.mdl-card').data("article");
-    console.log(thisArticle);
-    console.log($(this));
+    // console.log(thisArticle);
+    // console.log($(this));
     $('.hideable').hide();
     $(thisArticle).show();
   });
@@ -72,10 +72,27 @@ $(function() {
 
     var newArticle = new Article(title, subtitle, subject, body);
 
-     $('#articleSpace').append("<div id="  + newArticle.subject + " class='init_hidden hideable'>" +
-                              "<p>" + newArticle.body + "</p>" +
-                              "<button type='button' class='mdl-button mdl-button--raised mdl-button--accent toMainFeed'>Main Feed</button>" +
-                              "</div>");
+     $('#articleSpace').append("<div id='" + newArticle.subject + "' class='init_hidden hideable'>" +
+                                 "<div class='mdl-grid'>" +
+                                   "<div class='mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col'>" +
+                                     "<div class='mdl-card__media' style='background: url('img/Portland_Weird.jpg') center / cover; height: 400px;'>" +
+                                     "</div>" +
+                                     "<div class='mdl-card__title'>" +
+                                       "<h3 class='mdl-card__title-text'>" + newArticle.title + "</h3>" +
+                                     "</div>" +
+                                     "<div class='mdl-card__supporting-text'>" +
+                                       "<p class='mdl-card__subtitle-text'>" + newArticle.subtitle + "<p>" +
+                                     "</div>" +
+                                     "<div class='mdl-color-text--grey-700 mdl-card__supporting-text'>" +
+                                       "<p>" + newArticle.body + "</p>" +
+                                     "</div>" +
+                                     "<div class='mdl-card__actions'>" +
+                                       "<button type='button' class='mdl-button mdl-button--raised mdl-button--accent toMainFeed'>Main Feed</button>" +
+                                     "</div>" +
+                                   "</div>" +
+                                 "</div>" +
+                               "</div>"
+);
 
 
       $('#mainFeed').prepend("<div class='mdl-cell mdl-cell--12-col'>" +
