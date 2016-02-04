@@ -75,7 +75,7 @@ $(function() {
      $('#articleSpace').append("<div id='" + newArticle.subject + "' class='init_hidden hideable'>" +
                                  "<div class='mdl-grid'>" +
                                    "<div class='mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col'>" +
-                                     "<div class='mdl-card__media' style='background: url(../img/"+randomPic+") center / cover; height: 400px;'>" +
+                                     "<div class='mdl-card__media' style='background: url(./img/"+randomPic+") center / cover; height: 400px;'>" +
                                      "</div>" +
                                      "<div class='mdl-card__title'>" +
                                        "<h3 class='mdl-card__title-text'>" + newArticle.title + "</h3>" +
@@ -95,7 +95,7 @@ $(function() {
 
 
       $('#mainFeed').prepend("<div class='mdl-cell mdl-cell--12-col'>" +
-                              "<div class='mdl-card mdl-shadow--2dp' style='background: url(../img/"+randomPic+") center / cover;' data-article='#" + newArticle.subject + "'>" +
+                              "<div class='mdl-card mdl-shadow--2dp' style='background: url(./img/"+randomPic+") center / cover;' data-article='#" + newArticle.subject + "'>" +
                                 "<div class='mdl-card__title'>" +
                                   "<h3>" + newArticle.title + "</h3>" +
                                   "<p>" + newArticle.subtitle + "</p>" +
