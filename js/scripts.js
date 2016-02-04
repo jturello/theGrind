@@ -97,4 +97,23 @@ $(function() {
 
       });
 
+      $('#newsLetter').click(function(){
+    showDialog({
+        title: 'Newsletter Signup',
+        text: "<p>Sign up for our newsletter to get some updates, sometimes.</p> <div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label' style='width: 100%;'><input class='mdl-textfield__input' type='text' id='articleSubject' pattern='[a-z,A-Z]*'></input><label class='mdl-textfield__label' for='articleSubject'>First Name</label></div><div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label' style='width: 100%;'><input class='mdl-textfield__input' type='text' id='articleSubject' pattern='[a-z,A-Z]*'></input><label class='mdl-textfield__label' for='articleSubject'>Last Name</label></div><div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label' style='width: 100%;'><input class='mdl-textfield__input' type='email' id='articleSubject'></input><label class='mdl-textfield__label' for='articleSubject'>E-mail</label></div>",
+        negative: {
+            title: 'Maybe Later'
+        },
+        positive: {
+            title: '<span class="mdl-color-text--accent">Sign Up</span>',
+            onClick: function (e) {
+                showDialog({
+                  title: 'Sign Up Successful!',
+                  text: 'Thank you'
+                })
+            }
+        }
+    });
+});
+
 });
