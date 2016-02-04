@@ -107,7 +107,10 @@ $(function() {
         positive: {
             title: '<span class="mdl-color-text--accent">Sign Up</span>',
             onClick: function (e) {
-                alert('Action performed!');
+                showDialog({
+                  title: 'Sign Up Successful!',
+                  text: 'Thank you'
+                })
             }
         }
     });
