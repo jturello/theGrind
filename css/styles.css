@@ -44,6 +44,9 @@
     max-width: 100%;
 }
 
+.mdl-mini-footer__right-section a {
+  color: rgb(66,66,66);
+}
 
 /* Drawer Logo */
 #drawerTitle {
