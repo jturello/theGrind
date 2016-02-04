@@ -1,4 +1,3 @@
-#drawerTitle,
 .mdl-mini-footer {
   background-color: rgba(84,80,74,1);
 }
@@ -44,6 +43,22 @@
     margin: 0;
     max-width: 100%;
 }
+
+
+/* Drawer Logo */
+#drawerTitle {
+  background-color: rgba(84,80,74,1);
+  height: 64px;
+  border: none;
+}
+
+/* Footer Logo */
+#footerTitle {
+  background-color: rgba(84,80,74,1);
+  font-size: 16px;
+  border: none;
+}
+
 /* Main Article*/
 
 #mainArticle {
