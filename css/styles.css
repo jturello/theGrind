@@ -48,12 +48,16 @@
   color: rgb(66,66,66);
 }
 
+.mdl-layout__drawer-button {
+  color: rgba(255,193,7,1);
+}
 /* Drawer Logo */
 #drawerTitle {
   background-color: rgba(84,80,74,1);
   height: 64px;
   border: none;
 }
+
 
 /* Footer Logo */
 #footerTitle {
