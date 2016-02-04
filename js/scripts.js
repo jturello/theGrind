@@ -21,24 +21,25 @@ function Card(title, subtitle, subject) {
 
 $(function() {
   $('body').on('click', '.toMainFeed', function() {
-    $('.hideable').hide();
-    $('.mdl-grid').show();
+    $('.hideable').fadeOut();
+    $('.mdl-grid').delay(400).slideDown();
   });
 
   $("body").on('click', '.cta', function() {
     var thisArticle = $(this).closest('.mdl-card').data("article");
-    $('.hideable').hide();
-    $(thisArticle).show();
+    $('.hideable').fadeOut();
+    $(thisArticle).delay(400).slideDown();
   });
 
   $(".mdl-navigation__link").click(function(){
     var thisPage = $(this).data("page");
-    $('.hideable').hide();
-    $(thisPage).show();
+    $('.hideable').fadeOut();
+    $(thisPage).delay(400).slideDown();
   });
 
+// Start Admin Logic
   $("#adminLoginLink").click(function(){
-    $('.mdl-layout').first().fadeOut();
+    $('.mdl-layout').fadeOut();
     $('#adminCPLogin').delay(400).fadeIn();
   });
 
@@ -53,8 +54,7 @@ $(function() {
     if (username === "admin" && password === "password"){
       $('#adminCPLogin').fadeOut();
       $('#adminCP').delay(400).fadeIn();
-  }
-
+    }
   });
 
   $("#cancelPost").click(function(){
@@ -62,7 +62,6 @@ $(function() {
     $('.mdl-layout').first().slideDown();
   });
 
- // $('#postButton').click(function(){
   $('#postButton').on('click', function(){
     var title = $('input#articleTitle').val();
     var subtitle = $('input#articleSubtitle').val();
@@ -107,8 +106,10 @@ $(function() {
                               componentHandler.upgradeDom();
 
                               //return to main feed
+                              $('.hideable').hide();
                               $('#adminCP').fadeOut();
-                              $('.mdl-layout').first().slideDown();
+                              $('.mdl-layout').fadeIn();
+                              $('.mdl-grid').delay(400).slideDown();
 });
 
       $('#newsLetter').click(function(){
